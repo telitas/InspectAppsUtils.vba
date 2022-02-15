@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<translations>
+<translation id="Description-InspectPresentationUtils">
+This module is a utility for power point presentation inspection.
+</translation>
+<translation id="Description-Target_">
+Instance of Target property.
+</translation>
+<translation id="Description-InvalidArgumentError">
+This is an error code that raised when an argument of subroutine/function is invalid.
+</translation>
+<translation id="Description-InvalidOperationError">
+This is an error code that raised when a subroutine/function called in an invalid state.
+</translation>
+<translation id="Description-Target">
+Target presentation to be controlled by this class.
+</translation>
+<translation id="Description-Class_Initialize">
+Constructor.
+</translation>
+<translation id="Description-Initialize">
+Initialize an instance.
+This subroutine should be called only once,immediately after the constructor is called.
+</translation>
+<translation id="Description-RaiseError">
+Raising error utility.
+</translation>
+<translation id="Description-RaiseErrorIfNotInitialized">
+It is called when the instance is not initialized.
+</translation>
+<translation id="Description-RaiseErrorIfParentIsNotTargetPresentation">
+It is called when the specified object's parent is not a target presentation.
+</translation>
+<translation id="Description-RaiseErrorIfArgumentIsNothing">
+It is called when the argument is nothing.
+</translation>
+<translation id="Description-GetParentPresentation">
+Get the parent presentation of an object.
+
+[return]
+Presentation: Parent presentation.
+</translation>
+<translation id="Description-GetParentSlide">
+Get the parent slide of an object.
+
+[return]
+Slide: Parent slide.
+</translation>
+<translation id="Description-GetPresentationLocation">
+Get the location of presentation as a string.
+
+[return]
+String: Presentation location.
+</translation>
+<translation id="Description-GetSlideLocation">
+Get the location of slide as a string.
+
+[return]
+String: Slide location.
+</translation>
+<translation id="Description-GetShapeLocation">
+Get the location of shape as a string.
+
+[return]
+String: Shape location.
+</translation>
+<translation id="Description-ListShapesInSlide">
+List shapes in target slide.
+
+[parameters]
+ByVal TargetSlide As Slide: Target slide to list shapes.
+ByVal ShapeType As MsoShapeType: The Shape type to list.
+
+[return]
+Collection(Of Shape): Listed shapes.
+</translation>
+<translation id="Description-ListShapes">
+List shapes.
+
+[parameters]
+ByVal ShapeType As MsoShapeType: The Shape type to list.
+
+[return]
+Collection(Of Shape): Listed shapes.
+</translation>
+<translation id="Description-VisualizeShape">
+Visualize a shape.
+
+[parameters]
+ByVal TargetShape As Shape: Shape to visualize.
+
+[return]
+Shape: Visualized shape.
+</translation>
+<translation id="Description-DeleteShape">
+Delete a shape.
+
+[parameters]
+ByVal TargetShape As Shape: Shape to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted shape information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the shape was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-ConvertShapeToImage">
+Convert a shape to image.
+
+[parameters]
+TargetShape As Shape: Target slide to convert shapes to images.
+
+[return]
+Object: Converted shape as images.
+</translation>
+<translation id="Description-ConvertShapesToImagesInSlide">
+Convert content add-ins in target slide to images.
+
+[parameters]
+TargetSlide As Slide: Target slide to convert content add-ins to images.
+
+[return]
+Collection(Of Object): List of converted content add-ins as image.
+</translation>
+<translation id="Description-ConvertShapesToImages">
+Convert shapes in target presentation to images.
+
+[return]
+Collection(Of Object): List of converted shapes as image.
+</translation>
+<translation id="Description-DeleteComment">
+Delete a comment.
+
+[parameters]
+TargetComment As Comment: Target comment to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted comment information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Slide location where the comment was located.
+</translation>
+<translation id="Description-DeleteDocumentProperty">
+Delete a document property.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted document property information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Id: Object id.
+    Location: Presentation path where the document property was contained.
+</translation>
+<translation id="Description-IsDefaultDocumentPropertyValue">
+Check if document property value is the default.
+
+[parameters]
+ByVal TargetDocumentProperty As DocumentProperty: Target document property to check value.
+
+[return]
+Boolean: True if the value is the default.
+</translation>
+<translation id="Description-ClearDocumentProperty">
+Clear a document property.
+
+[parameters]
+TargetDocumentProperty As DocumentProperty: target document property to clear.
+
+[return]
+DocumentProperty: Cleared document property.
+</translation>
+<translation id="Description-DeleteVBComponent">
+Delete VB components in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted VB components information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Presentation path where the VB component was contained.
+
+[note]
+In almost cases, it is more better to save the presentation as pptx than to use this method.
+</translation>
+<translation id="Description-DeleteCustomXMLPart">
+Delete a custom XML part.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted custom XML part information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Id: Object id.
+    Location: Presentation path where the custom XML part was contained.
+</translation>
+<translation id="Description-ListCommentsInSlide_">
+The internal implementation of ListCommentsInSlide.
+</translation>
+<translation id="Description-ListCommentsInSlide">
+List comments in target slide.
+
+[parameters]
+ByVal TargetSlide As Slide: Target slide to list comments.
+
+[return]
+Collection(Of Comment): Listed comments.
+</translation>
+<translation id="Description-ListComments_">
+The internal implementation of ListCommentsInSlide.
+</translation>
+<translation id="Description-ListComments">
+List comments.
+
+[return]
+Collection(Of Comment): Listed comments.
+</translation>
+<translation id="Description-DeleteCommentsInSlide">
+Delete comments in target slide.
+
+[parameters]
+TargetSlide As Slide: Target slide to delete comments.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted comments information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Slide location where the comment was located.
+</translation>
+<translation id="Description-DeleteComments">
+Delete comments in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted comments information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Slide location where the comment was located.
+</translation>
+<translation id="Description-RemoveComments">
+Remove comments.
+</translation>
+<translation id="Description-RemoveDocumentProperties">
+Remove document properties.
+</translation>
+<translation id="Description-ListBuiltInDocumentProperties_">
+The internal implementation of ListBuiltInDocumentProperties.
+</translation>
+<translation id="Description-ListBuiltInDocumentProperties">
+List built-in document properties.
+
+[return]
+Collection(Of DocumentProperty): Listed document properties.
+</translation>
+<translation id="Description-ClearBuiltInDocumentProperties">
+Clear all built-in document property in target presentation.
+
+[return]
+Collection(Of DocumentProperty): List of cleared built-in document properties.
+</translation>
+<translation id="Description-ListCustomDocumentProperties_">
+The internal implementation of ListCustomDocumentProperties.
+</translation>
+<translation id="Description-ListCustomDocumentProperties">
+List custom document properties.
+
+[return]
+Collection(Of DocumentProperty): Listed document properties.
+</translation>
+<translation id="Description-ClearCustomDocumentProperties">
+Clear all custom document property in target presentation.
+
+[return]
+Collection(Of DocumentProperty): List of cleared custom document properties.
+</translation>
+<translation id="Description-DeleteCustomDocumentProperties">
+Delete custom document properties in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted custom document properties information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Presentation path where the custom document property was contained.
+</translation>
+<translation id="Description-RemovePersonalInformation">
+Remove personal information.
+</translation>
+<translation id="Description-ListContentAddInsInSlide_">
+The internal implementation of ListContentAddInsInSlide.
+</translation>
+<translation id="Description-ListContentAddInsInSlide">
+List content add-ins in target slide.
+
+[parameters]
+ByVal TargetSlide As Slide: Target slide to list content add-ins.
+
+[return]
+Collection(Of Shape): Listed content add-ins.
+</translation>
+<translation id="Description-ListContentAddIns_">
+The internal implementation of ListContentAddIns.
+</translation>
+<translation id="Description-ListContentAddIns">
+List content add-ins.
+
+[return]
+Collection(Of Shape): Listed content add-ins.
+</translation>
+<translation id="Description-ConvertContentAddInsToImagesInSlide">
+Convert content add-ins in target slide to images.
+
+[parameters]
+TargetSlide As Slide: Target slide to convert content add-ins to images.
+
+[return]
+Collection(Of Object): List of converted content add-ins as image.
+</translation>
+<translation id="Description-ConvertContentAddInsToImages">
+Convert content add-ins in target presentation to images.
+
+[return]
+Collection(Of Object): List of converted content add-ins as image.
+</translation>
+<translation id="Description-DeleteContentAddInsInSlide">
+Delete content add-ins in target slide.
+
+[parameters]
+TargetSlide As Slide: Target slide to delete comments.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted content add-ins information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the content add-in was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteContentAddIns">
+Delete content add-ins in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted content add-ins information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the content add-in was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-ListEmbeddedDocumentsInSlide_">
+The internal implementation of ListEmbeddedDocumentsInSlide.
+</translation>
+<translation id="Description-ListEmbeddedDocumentsInSlide">
+List embedded documents in target slide.
+
+[parameters]
+ByVal TargetSlide As Slide: Target slide to list embedded documents.
+
+[return]
+Collection(Of OLEObject): Listed embedded documents.
+</translation>
+<translation id="Description-ListEmbeddedDocuments_">
+The internal implementation of ListEmbeddedDocuments.
+</translation>
+<translation id="Description-ListEmbeddedDocuments">
+List embedded documents.
+
+[return]
+Collection(Of OLEObject): Listed embedded documents.
+</translation>
+<translation id="Description-DeleteEmbeddedDocumentsInSlide">
+Delete embedded documents in target slide.
+
+[parameters]
+TargetSlide As Slide: Target slide to delete embedded documents.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted embedded documents information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the embedded document was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteEmbeddedDocuments">
+Delete embedded documents in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted embedded documents information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the embedded document was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-ListMacros_">
+The internal implementation of ListMacros.
+</translation>
+<translation id="Description-ListMacros">
+List macros.
+
+[return]
+Collection(Of Object): Listed macros.
+</translation>
+<translation id="Description-DeleteMacros">
+Delete macros in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted macros information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Presentation path where the macro was contained.
+
+[note]
+In almost cases, it is more better to save the presentation as pptx than to use this method.
+</translation>
+<translation id="Description-ListActiveXControlsInSlide_">
+The internal implementation of ListActiveXControlsInSlide.
+</translation>
+<translation id="Description-ListActiveXControlsInSlide">
+List ActiveX controls in target slide.
+
+[parameters]
+ByVal TargetSlide As Slide: Target slide to list ActiveX controls.
+
+[return]
+Collection(Of Shape): Listed ActiveX controls.
+</translation>
+<translation id="Description-ListActiveXControls_">
+The internal implementation of ListActiveXControls.
+</translation>
+<translation id="Description-ListActiveXControls">
+List ActiveX controls.
+
+[return]
+Collection(Of Shape): Listed ActiveX controls.
+</translation>
+<translation id="Description-DeleteActiveXControlsInSlide">
+Delete ActiveX controls in target slide.
+
+[parameters]
+TargetSlide As Slide: Target slide to delete ActiveX controls.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ActiveX controls information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the ActiveX control was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteActiveXControls">
+Delete ActiveX controls in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ActiveX controls information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the ActiveX control was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-ListInkInSlide_">
+The internal implementation of ListInkInSlide.
+</translation>
+<translation id="Description-ListInkInSlide">
+List ink in target slide.
+
+[parameters]
+ByVal TargetSlide As Slide: Target slide to list ink.
+
+[return]
+Collection(Of Shape): Listed ink.
+</translation>
+<translation id="Description-ListInk_">
+The internal implementation of ListInk.
+</translation>
+<translation id="Description-ListInk">
+List Ink.
+
+[return]
+Collection(Of Shape): Listed ink.
+</translation>
+<translation id="Description-DeleteInkInSlide">
+Delete ink in target slide.
+
+[parameters]
+TargetSlide As Slide: Target slide to delete ActiveX controls.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ink information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the ink was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteInk">
+Delete ink in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ink information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the ink was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-RemoveInk">
+Remove ink.
+</translation>
+<translation id="Description-ListCustomXMLData_">
+The internal implementation of ListCustomXMLData.
+</translation>
+<translation id="Description-ListCustomXMLData">
+List custom XML data in target slide.
+
+[return]
+Collection(Of CustomXMLPart): Listed custom XML data.
+</translation>
+<translation id="Description-DeleteCustomXMLData">
+Delete custom XML data in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted custom XML data information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Id: Object id.
+    Location: Presentation path where the custom XML part was contained.
+</translation>
+<translation id="Description-InspectCustomXMLData">
+Inspect custom XML data.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of custom XML data inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixCustomXMLData">
+Fix custom XML data.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of custom XML data fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-ListInvisibleContentInSlide_">
+The internal implementation of ListInvisibleContentInSlide.
+</translation>
+<translation id="Description-ListInvisibleContentInSlide">
+List invisible content in target slide.
+
+[parameters]
+ByVal TargetSlide As Slide: Target slide to list invisible content.
+
+[return]
+Collection(Of Shape): Listed invisible content.
+</translation>
+<translation id="Description-ListInvisibleContent_">
+The internal implementation of ListInvisibleContent.
+</translation>
+<translation id="Description-ListInvisibleContent">
+List invisible content.
+
+[return]
+Collection(Of Shape): Listed invisible content.
+</translation>
+<translation id="Description-VisualizeInvisibleContentInSlide">
+Visualize content in target slide.
+
+[parameters]
+ByVal TargetSlide As Slide: Target slide to list visualize content.
+
+[return]
+Collection(Of Shape): Visualized content.
+</translation>
+<translation id="Description-VisualizeInvisibleContent">
+Visualize content.
+
+[return]
+Collection(Of Shape): Visualized content.
+</translation>
+<translation id="Description-DeleteInvisibleContentInSlide">
+Delete invisible content in target slide.
+
+[parameters]
+TargetSlide As Slide: Target slide to delete invisible content.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted invisible content information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the invisible content was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteInvisibleContent">
+Delete invisible content in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted invisible content information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the invisible content was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-InspectInvisibleContent">
+Inspect invisible content.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of invisible content inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixInvisibleContent">
+Fix invisible content.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of invisible content fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-ListOffSlideContentInSlide_">
+The internal implementation of ListOffSlideContentInSlide.
+</translation>
+<translation id="Description-ListOffSlideContentInSlide">
+List off-slide content in target slide.
+
+[parameters]
+ByVal TargetSlide As Slide: Target slide to list off-slide content.
+
+[return]
+Collection(Of Shape): Listed off-slide content.
+</translation>
+<translation id="Description-ListOffSlideContent_">
+The internal implementation of ListOffSlideContent.
+</translation>
+<translation id="Description-ListOffSlideContent">
+List off-slide content.
+
+[return]
+Collection(Of Shape): Listed off-slide content.
+</translation>
+<translation id="Description-DeleteOffSlideContentInSlide">
+Delete off-slide content in target slide.
+
+[parameters]
+TargetSlide As Slide: Target slide to delete off-slide content.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted off-slide content information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the off-slide content was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteOffSlideContent">
+Delete off-slide content in target presentation.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted off-slide content information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the off-slide content was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-InspectOffSlideContent">
+Inspect off-slide content.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of off-slide content inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixOffSlideContent">
+Fix off-slide content.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of off-slide content fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-ContainsPresentationNoteInSlide_">
+The internal implementation of SlideContainsPresentationNote.
+</translation>
+<translation id="Description-ContainsPresentationNoteInSlide">
+Check if the Target slide contains presentation note.
+
+[parameters]
+TargetSlide As Slide: Target slide to check if it contains presentation note.
+
+[return]
+Boolean: When a presentation note is contained, true is returned.
+</translation>
+<translation id="Description-ListSlidesContainPresentationNotes_">
+The internal implementation of ListSlidesContainPresentationNotes.
+</translation>
+<translation id="Description-ListSlidesContainPresentationNotes">
+List slides contain presentation notes.
+
+[return]
+Collection(Of Shape): Listed slides contain presentation notes.
+</translation>
+<translation id="Description-ClearPresentationNoteInSlide_">
+The internal implementation of ClearPresentationNoteInSlide.
+</translation>
+<translation id="Description-ClearPresentationNoteInSlide">
+Clear presentation notes in target slide.
+
+[parameters]
+TargetSlide As Slide: Target slide to clear the presentation note.
+
+[return]
+Boolean: When presentation note is cleared, true is returned.
+</translation>
+<translation id="Description-ClearPresentationNotes">
+Clear presentation notes in target workbook.
+
+[return]
+Collection(Of Slide): The slide with cleared presentation note.
+</translation>
+<translation id="Description-InspectPresentationNotes">
+Inspect presentation notes.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of presentation notes inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixPresentationNotes">
+Fix presentation notes.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of presentation notes fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+</translations>

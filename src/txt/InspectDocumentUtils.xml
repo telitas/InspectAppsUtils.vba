@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<translations>
+<translation id="Description-InspectDocumentUtils">
+This module is a utility for word document inspection.
+</translation>
+<translation id="Description-Target_">
+Instance of Target property.
+</translation>
+<translation id="Description-InvalidArgumentError">
+This is an error code that raised when an argument of subroutine/function is invalid.
+</translation>
+<translation id="Description-InvalidOperationError">
+This is an error code that raised when a subroutine/function called in an invalid state.
+</translation>
+<translation id="Description-Target">
+Target document to be controlled by this class.
+</translation>
+<translation id="Description-Class_Initialize">
+Constructor.
+</translation>
+<translation id="Description-Initialize">
+Initialize an instance.
+This subroutine should be called only once,immediately after the constructor is called.
+</translation>
+<translation id="Description-RaiseError">
+Raising error utility.
+</translation>
+<translation id="Description-RaiseErrorIfNotInitialized">
+It is called when the instance is not initialized.
+</translation>
+<translation id="Description-RaiseErrorIfParentIsNotTargetDocument">
+It is called when the specified object's parent is not a target document.
+</translation>
+<translation id="Description-RaiseErrorIfArgumentIsNothing">
+It is called when the argument is nothing.
+</translation>
+<translation id="Description-GetParentDocument">
+Get the parent document of an object.
+
+[return]
+Document: Parent document.
+</translation>
+<translation id="Description-GetDocumentLocation">
+Get the location of document as a string.
+
+[return]
+String: Document location.
+</translation>
+<translation id="Description-GetRangeLocation">
+Get the location of range as a string.
+
+[return]
+String: Range location.
+</translation>
+<translation id="Description-GetShapeLocation">
+Get the location of shape as a string.
+
+[return]
+String: Shape location.
+</translation>
+<translation id="Description-ListShapes">
+List shapes.
+
+[parameters]
+ByVal ShapeType As MsoShapeType: The Shape type to list.
+
+[return]
+Collection(Of Shape): Listed shapes.
+</translation>
+<translation id="Description-VisualizeShape">
+Visualize a shape.
+
+[parameters]
+ByVal TargetShape As Shape: Shape to visualize.
+
+[return]
+Shape: Visualized shape.
+</translation>
+<translation id="Description-DeleteShape">
+Delete a shape.
+
+[parameters]
+ByVal TargetShape As Shape: Shape to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted shape information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the shape was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteFormField">
+Delete a form field.
+
+[parameters]
+ByVal TargetFormField As FormField: Form field to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted form field information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the form field was located.
+    FormField.Type: Type of form field.
+</translation>
+<translation id="Description-DeleteRange">
+Delete a range.
+
+[parameters]
+ByVal TargetRange As Range: Form field to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted range information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the form field was located.
+</translation>
+<translation id="Description-ListInlineShapes">
+List inline shapes.
+
+[parameters]
+ByVal InlineShapeType As WdInlineShapeType: The Shape type to list.
+
+[return]
+Collection(Of InlineShapes): Listed inline shapes.
+</translation>
+<translation id="Description-DeleteInlineShape">
+Delete a inline shape.
+
+[parameters]
+ByVal TargetInlineShape As InlineShape: Inline shape to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted inline shape information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the inline shape was located.
+    InlineShape.Type: Type of inline shape.
+</translation>
+<translation id="Description-DeleteComment">
+Delete a comment.
+
+[parameters]
+TargetComment As Comment: Target comment to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted comment information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the comment was located.
+</translation>
+<translation id="Description-DeleteDocumentProperty">
+Delete a document property.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted document property information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Id: Object id.
+    Location: Document path where the document property was contained.
+</translation>
+<translation id="Description-IsDefaultDocumentPropertyValue">
+Check if document property value is the default.
+
+[parameters]
+ByVal TargetDocumentProperty As DocumentProperty: Target document property to check value.
+
+[return]
+Boolean: True if the value is the default.
+</translation>
+<translation id="Description-ClearDocumentProperty">
+Clear a document property.
+
+[parameters]
+TargetDocumentProperty As DocumentProperty: target document property to clear.
+
+[return]
+DocumentProperty: Cleared document property.
+</translation>
+<translation id="Description-DeleteVBComponent">
+Delete VB components in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted VB components information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Document path where the VB component was contained.
+
+[note]
+In almost cases, it is more better to save the document as docx than to use this method.
+</translation>
+<translation id="Description-DeleteCustomXMLPart">
+Delete a custom XML part.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted custom XML part information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Id: Object id.
+    Location: Document path where the custom XML part was contained.
+</translation>
+<translation id="Description-ListComments_">
+The internal implementation of ListCommentsInWorksheet.
+</translation>
+<translation id="Description-ListComments">
+List comments.
+
+[return]
+Collection(Of Comment): Listed comments.
+</translation>
+<translation id="Description-DeleteComments">
+Delete comments in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted comments information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the comment was located.
+</translation>
+<translation id="Description-RemoveComments">
+Remove comments.
+</translation>
+<translation id="Description-RemoveDocumentProperties">
+Remove document properties.
+</translation>
+<translation id="Description-ListBuiltInDocumentProperties_">
+The internal implementation of ListBuiltInDocumentProperties.
+</translation>
+<translation id="Description-ListBuiltInDocumentProperties">
+List built-in document properties.
+
+[return]
+Collection(Of DocumentProperty): Listed document properties.
+</translation>
+<translation id="Description-ClearBuiltInDocumentProperties">
+Clear all built-in document property in target document.
+
+[return]
+Collection(Of DocumentProperty): List of cleared built-in document properties.
+</translation>
+<translation id="Description-ListCustomDocumentProperties_">
+The internal implementation of ListCustomDocumentProperties.
+</translation>
+<translation id="Description-ListCustomDocumentProperties">
+List custom document properties.
+
+[return]
+Collection(Of DocumentProperty): Listed document properties.
+</translation>
+<translation id="Description-ClearCustomDocumentProperties">
+Clear all custom document property in target document.
+
+[return]
+Collection(Of DocumentProperty): List of cleared custom document properties.
+</translation>
+<translation id="Description-DeleteCustomDocumentProperties">
+Delete custom document properties in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted custom document properties information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Document path where the custom document property was contained.
+</translation>
+<translation id="Description-RemovePersonalInformation">
+Remove personal information.
+</translation>
+<translation id="Description-RemoveTaskPaneAddIns">
+Remove task pane add-ins.
+</translation>
+<translation id="Description-ListEmbeddedDocuments_">
+The internal implementation of ListEmbeddedDocuments.
+</translation>
+<translation id="Description-ListEmbeddedDocuments">
+List embedded documents.
+
+[return]
+Collection(Of InlineShape): Listed embedded documents.
+</translation>
+<translation id="Description-DeleteEmbeddedDocuments">
+Delete embedded documents in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted embedded documents information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the inline shape was located.
+    InlineShape.Type: Type of inline shape.
+</translation>
+<translation id="Description-ListMacros_">
+The internal implementation of ListMacros.
+</translation>
+<translation id="Description-ListMacros">
+List macros.
+
+[return]
+Collection(Of Object): Listed macros.
+</translation>
+<translation id="Description-DeleteMacros">
+Delete macros in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted macros information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Document path where the macro was contained.
+
+[note]
+In almost cases, it is more better to save the document as docx than to use this method.
+</translation>
+<translation id="Description-ListForms_">
+The internal implementation of ListForms.
+</translation>
+<translation id="Description-ListForms">
+List forms.
+
+[return]
+Collection(Of FormField): Listed forms.
+</translation>
+<translation id="Description-DeleteForms">
+Delete forms in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted forms information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the form field was located.
+    FormField.Type: Type of form field.
+</translation>
+<translation id="Description-ListActiveXControls">
+List ActiveX controls.
+
+[return]
+Collection(Of InlineShape): Listed ActiveX controls.
+</translation>
+<translation id="Description-DeleteActiveXControls">
+Delete ActiveX controls in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ActiveX controls information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the inline shape was located.
+    InlineShape.Type: Type of inline shape.
+</translation>
+<translation id="Description-ListInk_">
+The internal implementation of ListInk.
+</translation>
+<translation id="Description-ListInk">
+List Ink.
+
+[return]
+Collection(Of Shape): Listed ink.
+</translation>
+<translation id="Description-DeleteInk">
+Delete ink in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ink information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the shape was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-RemoveInk">
+Remove ink.
+</translation>
+<translation id="Description-ListCustomXMLData_">
+The internal implementation of ListCustomXMLData.
+</translation>
+<translation id="Description-ListCustomXMLData">
+List custom XML data in target worksheet.
+
+[return]
+Collection(Of CustomXMLPart): Listed custom XML data.
+</translation>
+<translation id="Description-DeleteCustomXMLData">
+Delete custom XML data in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted custom XML data information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Id: Object id.
+    Location: Document path where the custom XML part was contained.
+</translation>
+<translation id="Description-InspectCustomXMLData">
+Inspect custom XML data.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of custom XML data inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixCustomXMLData">
+Fix custom XML data.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of custom XML data fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-InspectHeadersAndFooters">
+Inspect headers and footers.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of headers and footers inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixHeadersAndFooters">
+Fix headers and footers.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of headers and footers fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-ListHeadersInSection_">
+The internal implementation of ListHeadersInSection.
+</translation>
+<translation id="Description-ListHeadersInSection">
+List headers in target section.
+
+[parameters]
+ByVal TargetSection As Section: Target section to list headers.
+
+[return]
+Collection(Of HeaderFooter): Listed headers.
+</translation>
+<translation id="Description-ListHeaders_">
+The internal implementation of ListHeaders.
+</translation>
+<translation id="Description-ListHeaders">
+List headers.
+
+[return]
+Collection(Of HeaderFooter): Listed headers.
+</translation>
+<translation id="Description-ListFootersInSection_">
+The internal implementation of ListFootersInSection.
+</translation>
+<translation id="Description-ListFootersInSection">
+List footers in target section.
+
+[parameters]
+ByVal TargetSection As Section: Target section to list footers.
+
+[return]
+Collection(Of HeaderFooter): Listed footers.
+</translation>
+<translation id="Description-ListFooters_">
+The internal implementation of ListFooters.
+</translation>
+<translation id="Description-ListFooters">
+List footers.
+
+[return]
+Collection(Of HeaderFooter): Listed footers.
+</translation>
+<translation id="Description-ListInvisibleContent_">
+The internal implementation of ListInvisibleContent.
+</translation>
+<translation id="Description-ListInvisibleContent">
+List invisible content.
+
+[return]
+Collection(Of Shape): Listed invisible content.
+</translation>
+<translation id="Description-VisualizeInvisibleContent">
+Visualize content.
+
+[return]
+Collection(Of Shape): Visualized content.
+</translation>
+<translation id="Description-DeleteInvisibleContent">
+Delete invisible content in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted invisible content information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: The point where the shape was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-InspectInvisibleContent">
+Inspect invisible content.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of invisible content inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixInvisibleContent">
+Fix invisible content.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of invisible content fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-ListCollapsedHeadings_">
+The internal implementation of ListCollapsedHeadings.
+</translation>
+<translation id="Description-ListCollapsedHeadings">
+List collapsed headings.
+
+[return]
+Collection(Of Paragraph): Listed collapsed headings.
+</translation>
+<translation id="Description-ExpandCollapsedHeadings">
+Expand collapsed headings.
+
+[return]
+Collection(Of Paragraph): Expanded collapsed headings.
+</translation>
+<translation id="Description-InspectCollapsedHeadings">
+Inspect collapsed headings.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of collapsed headings inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixCollapsedHeadings">
+Fix collapsed headings.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of collapsed headings fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-ListHiddenText_">
+The internal implementation of ListHiddenText.
+</translation>
+<translation id="Description-ListHiddenText">
+List hidden text.
+
+[return]
+Collection(Of Range): Listed hidden text.
+</translation>
+<translation id="Description-VisualizeHiddenText">
+Visualize hidden text.
+
+[return]
+Collection(Of Range): Visualized hidden text.
+</translation>
+<translation id="Description-DeleteHiddenText">
+Delete hidden text in target document.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden text information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the form field was located.
+</translation>
+<translation id="Description-InspectHiddenText">
+Inspect hidden text.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of hidden text inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixHiddenText">
+Fix hidden text.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of hidden text fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+</translations>

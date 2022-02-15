@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<translations>
+<translation id="Description-InspectWorkbookUtils">
+This module is a utility for excel workbook inspection.
+</translation>
+<translation id="Description-Target_">
+Instance of Target property.
+</translation>
+<translation id="Description-InvalidArgumentError">
+This is an error code that raised when an argument of subroutine/function is invalid.
+</translation>
+<translation id="Description-InvalidOperationError">
+This is an error code that raised when a subroutine/function called in an invalid state.
+</translation>
+<translation id="Description-Target">
+Target workbook to be controlled by this class.
+</translation>
+<translation id="Description-Class_Initialize">
+Constructor.
+</translation>
+<translation id="Description-Initialize">
+Initialize an instance.
+This subroutine should be called only once,immediately after the constructor is called.
+</translation>
+<translation id="Description-RaiseError">
+Raising error utility.
+</translation>
+<translation id="Description-RaiseErrorIfNotInitialized">
+It is called when the instance is not initialized.
+</translation>
+<translation id="Description-RaiseErrorIfParentIsNotTargetWorkbook">
+It is called when the specified object's parent is not a target workbook.
+</translation>
+<translation id="Description-RaiseErrorIfArgumentIsNothing">
+It is called when the argument is nothing.
+</translation>
+<translation id="Description-GetParentWorkbook">
+Get the parent workbook of an object.
+
+[return]
+Workbook: Parent workbook.
+</translation>
+<translation id="Description-GetParentWorksheet">
+Get the parent worksheet of an object.
+
+[return]
+Worksheet: Parent worksheet.
+</translation>
+<translation id="Description-GetParentRange">
+Get the parent range of an object.
+
+[return]
+Range: Parent range.
+</translation>
+<translation id="Description-GetWorkbookLocation">
+Get the location of workbook as a string.
+
+[return]
+String: Workbook location.
+</translation>
+<translation id="Description-GetWorksheetLocation">
+Get the location of worksheet as a string.
+
+[return]
+String: Worksheet location.
+</translation>
+<translation id="Description-ListShapesInWorksheet">
+List shapes in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list shapes.
+ByVal ShapeType As MsoShapeType: The Shape type to list.
+
+[return]
+Collection(Of Shape): Listed shapes.
+</translation>
+<translation id="Description-ListShapes">
+List shapes.
+
+[parameters]
+ByVal ShapeType As MsoShapeType: The Shape type to list.
+
+[return]
+Collection(Of Shape): Listed shapes.
+</translation>
+<translation id="Description-VisualizeShape">
+Visualize a shape.
+
+[parameters]
+ByVal TargetShape As Shape: Shape to visualize.
+
+[return]
+Shape: Visualized shape.
+</translation>
+<translation id="Description-DeleteShape">
+Delete a shape.
+
+[parameters]
+ByVal TargetShape As Shape: Shape to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted shape information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the shape was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-ListOLEObjectsInWorksheet">
+List OLEObjects in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list OLEObjects.
+ByVal OLEType As XlOLEType: The OLEType to list.
+
+[return]
+Collection(Of OLEObject): Listed OLEObjects.
+</translation>
+<translation id="Description-ListOLEObjects">
+List OLEObjects.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list OLEObjects.
+ByVal OLEType As XlOLEType: The OLEType to list.
+
+[return]
+Collection(Of OLEObject): Listed OLEObjects.
+</translation>
+<translation id="Description-DeleteOLEObject">
+Delete an OLE Object.
+
+[parameters]
+TargetOLEObject As OLEObject: OLE Object to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted OLE Object information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the OLE Object was located.
+    OLEObject.OLEType: OLEType of OLE object.
+</translation>
+<translation id="Description-ConvertShapeToImage">
+Convert a shape to image.
+
+[parameters]
+TargetShape As Shape: Target worksheet to convert shapes to images.
+
+[return]
+Object: Converted shape as images.
+</translation>
+<translation id="Description-ConvertShapesToImagesInWorksheet">
+Convert content add-ins in Target worksheet to images.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to convert content add-ins to images.
+
+[return]
+Collection(Of Object): List of converted content add-ins as image.
+</translation>
+<translation id="Description-ConvertShapesToImages">
+Convert shapes in target workbook to images.
+
+[return]
+Collection(Of Object): List of converted shapes as image.
+</translation>
+<translation id="Description-VisualizeComment">
+Visualize comment.
+
+[parameters]
+ByVal TargetComment As Comment: The comment to visualize.
+
+[return]
+Collection(Of Comment): Visualized comment.
+</translation>
+<translation id="Description-DeleteComment">
+Delete a comment.
+
+[parameters]
+TargetComment As Comment: Target comment to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted comment information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the comment was located.
+</translation>
+<translation id="Description-DeleteDocumentProperty">
+Delete a document property.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted document property information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Id: Object id.
+    Location: Workbook path where the document property was contained.
+</translation>
+<translation id="Description-IsDefaultDocumentPropertyValue">
+Check if document property value is the default.
+
+[parameters]
+ByVal TargetDocumentProperty As DocumentProperty: Target document property to check value.
+
+[return]
+Boolean: True if the value is the default.
+</translation>
+<translation id="Description-ClearDocumentProperty">
+Clear a document property.
+
+[parameters]
+TargetDocumentProperty As DocumentProperty: target document property to clear.
+
+[return]
+DocumentProperty: Cleared document property.
+</translation>
+<translation id="Description-DeleteVBComponent">
+Delete VB components in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted VB components information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Workbook path where the VB component was contained.
+
+[note]
+In almost cases, it is more better to save the workbook as xlsx than to use this method.
+</translation>
+<translation id="Description-DeleteCustomXMLPart">
+Delete a custom XML part.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted custom XML part information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Id: Object id.
+    Location: Workbook path where the custom XML part was contained.
+</translation>
+<translation id="Description-ListCommentsInWorksheet_">
+The internal implementation of ListCommentsInWorksheet.
+</translation>
+<translation id="Description-ListCommentsInWorksheet">
+List comments in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list comments.
+
+[return]
+Collection(Of Comment): Listed comments.
+</translation>
+<translation id="Description-ListComments_">
+The internal implementation of ListCommentsInWorksheet.
+</translation>
+<translation id="Description-ListComments">
+List comments.
+
+[return]
+Collection(Of Comment): Listed comments.
+</translation>
+<translation id="Description-VisualizeCommentsInWorksheet">
+Visualize comments in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to visualize comments.
+
+[return]
+Collection(Of Comment): Visualized comments.
+</translation>
+<translation id="Description-VisualizeComments">
+Visualize comments.
+
+[return]
+Collection(Of Comment): Visualized comments.
+</translation>
+<translation id="Description-DeleteCommentsInWorksheet">
+Delete comments in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete comments.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted comments information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the comment was located.
+</translation>
+<translation id="Description-DeleteComments">
+Delete comments in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted comments information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as string where the comment was located.
+</translation>
+<translation id="Description-RemoveComments">
+Remove comments.
+</translation>
+<translation id="Description-RemoveDocumentProperties">
+Remove document properties.
+</translation>
+<translation id="Description-ListBuiltInDocumentProperties_">
+The internal implementation of ListBuiltInDocumentProperties.
+</translation>
+<translation id="Description-ListBuiltInDocumentProperties">
+List built-in document properties.
+
+[return]
+Collection(Of DocumentProperty): Listed document properties.
+</translation>
+<translation id="Description-ClearBuiltInDocumentProperties">
+Clear all built-in document property in target workbook.
+
+[return]
+Collection(Of DocumentProperty): List of cleared built-in document properties.
+</translation>
+<translation id="Description-ListCustomDocumentProperties_">
+The internal implementation of ListCustomDocumentProperties.
+</translation>
+<translation id="Description-ListCustomDocumentProperties">
+List custom document properties.
+
+[return]
+Collection(Of DocumentProperty): Listed document properties.
+</translation>
+<translation id="Description-ClearCustomDocumentProperties">
+Clear all custom document property in target workbook.
+
+[return]
+Collection(Of DocumentProperty): List of cleared custom document properties.
+</translation>
+<translation id="Description-DeleteCustomDocumentProperties">
+Delete custom document properties in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted custom document properties information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Workbook path where the custom document property was contained.
+</translation>
+<translation id="Description-RemovePersonalInformation">
+Remove personal information.
+</translation>
+<translation id="Description-RemovePrinterPaths">
+Remove printer paths.
+</translation>
+<translation id="Description-ListContentAddInsInWorksheet_">
+The internal implementation of ListContentAddInsInWorksheet.
+</translation>
+<translation id="Description-ListContentAddInsInWorksheet">
+List content add-ins in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list content add-ins.
+
+[return]
+Collection(Of Shape): Listed content add-ins.
+</translation>
+<translation id="Description-ListContentAddIns_">
+The internal implementation of ListContentAddIns.
+</translation>
+<translation id="Description-ListContentAddIns">
+List content add-ins.
+
+[return]
+Collection(Of Shape): Listed content add-ins.
+</translation>
+<translation id="Description-ConvertContentAddInsToImagesInWorksheet">
+Convert content add-ins in Target worksheet to images.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to convert content add-ins to images.
+
+[return]
+Collection(Of Object): List of converted content add-ins as image.
+</translation>
+<translation id="Description-ConvertContentAddInsToImages">
+Convert content add-ins in target workbook to images.
+
+[return]
+Collection(Of Object): List of converted content add-ins as image.
+</translation>
+<translation id="Description-DeleteContentAddInsInWorksheet">
+Delete content add-ins in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete comments.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted content add-ins information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the content app was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteContentAddIns">
+Delete content add-ins in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted content add-ins information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the content app was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-RemoveContentAddIns">
+Remove content add-ins.
+</translation>
+<translation id="Description-RemoveTaskPaneAddIns">
+Remove task pane add-ins.
+</translation>
+<translation id="Description-ListEmbeddedDocumentsInWorksheet_">
+The internal implementation of ListEmbeddedDocumentsInWorksheet.
+</translation>
+<translation id="Description-ListEmbeddedDocumentsInWorksheet">
+List embedded documents in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list embedded documents.
+
+[return]
+Collection(Of OLEObject): Listed embedded documents.
+</translation>
+<translation id="Description-ListEmbeddedDocuments_">
+The internal implementation of ListEmbeddedDocuments.
+</translation>
+<translation id="Description-ListEmbeddedDocuments">
+List embedded documents.
+
+[return]
+Collection(Of OLEObject): Listed embedded documents.
+</translation>
+<translation id="Description-DeleteEmbeddedDocumentsInWorksheet">
+Delete embedded documents in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete embedded documents.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted embedded documents information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as String where the embedded document was contained.
+    OLEObject.OLEType: OLEType of OLE object.
+</translation>
+<translation id="Description-DeleteEmbeddedDocuments">
+Delete embedded documents in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted embedded documents information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as String where the embedded document was contained.
+    OLEObject.OLEType: OLEType of OLE object.
+</translation>
+<translation id="Description-ListMacros_">
+The internal implementation of ListMacros.
+</translation>
+<translation id="Description-ListMacros">
+List macros.
+
+[return]
+Collection(Of Object): Listed macros.
+</translation>
+<translation id="Description-DeleteMacros">
+Delete macros in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted macros information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Workbook path where the macro was contained.
+
+[note]
+In almost cases, it is more better to save the workbook as xlsx than to use this method.
+</translation>
+<translation id="Description-ListFormsInWorksheet_">
+The internal implementation of ListFormsInWorksheet.
+</translation>
+<translation id="Description-ListFormsInWorksheet">
+List forms in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list forms.
+
+[return]
+Collection(Of Shape): Listed forms.
+</translation>
+<translation id="Description-ListForms_">
+The internal implementation of ListForms.
+</translation>
+<translation id="Description-ListForms">
+List forms.
+
+[return]
+Collection(Of Shape): Listed forms.
+</translation>
+<translation id="Description-DeleteFormsInWorksheet">
+Delete forms in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete forms.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted forms information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as String where the form was contained.
+    Shape.Type: Type of form.
+</translation>
+<translation id="Description-DeleteForms">
+Delete forms in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted forms information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as String where the form was contained.
+    Shape.Type: Type of form.
+</translation>
+<translation id="Description-ListActiveXControlsInWorksheet_">
+The internal implementation of ListActiveXControlsInWorksheet.
+</translation>
+<translation id="Description-ListActiveXControlsInWorksheet">
+List ActiveX controls in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list ActiveX controls.
+
+[return]
+Collection(Of OLEObject): Listed ActiveX controls.
+</translation>
+<translation id="Description-ListActiveXControls_">
+The internal implementation of ListActiveXControls.
+</translation>
+<translation id="Description-ListActiveXControls">
+List ActiveX controls.
+
+[return]
+Collection(Of OLEObject): Listed ActiveX controls.
+</translation>
+<translation id="Description-DeleteActiveXControlsInWorksheet">
+Delete ActiveX controls in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete ActiveX controls.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ActiveX controls information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the ActiveX control was located.
+    OLEObject.OLEType: OLEType of OLE object.
+</translation>
+<translation id="Description-DeleteActiveXControls">
+Delete ActiveX controls in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ActiveX controls information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the ActiveX control was located.
+    OLEObject.OLEType: OLEType of OLE object.
+</translation>
+<translation id="Description-ListInkInWorksheet_">
+The internal implementation of ListInkInWorksheet.
+</translation>
+<translation id="Description-ListInkInWorksheet">
+List ink in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list ink.
+
+[return]
+Collection(Of Shape): Listed ink.
+</translation>
+<translation id="Description-ListInk_">
+The internal implementation of ListInk.
+</translation>
+<translation id="Description-ListInk">
+List Ink.
+
+[return]
+Collection(Of Shape): Listed ink.
+</translation>
+<translation id="Description-DeleteInkInWorksheet">
+Delete ink in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete ActiveX controls.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ink information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the ink was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteInk">
+Delete ink in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted ink information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the ink was located.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-RemoveInk">
+Remove ink.
+</translation>
+<translation id="Description-ListCustomXMLData_">
+The internal implementation of ListCustomXMLData.
+</translation>
+<translation id="Description-ListCustomXMLData">
+List custom XML data in target worksheet.
+
+[return]
+Collection(Of CustomXMLPart): Listed custom XML data.
+</translation>
+<translation id="Description-DeleteCustomXMLData">
+Delete custom XML data in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted custom XML data information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Id: Object id.
+    Location: Workbook path where the custom XML part was contained.
+</translation>
+<translation id="Description-InspectCustomXMLData">
+Inspect custom XML data.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of custom XML data inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixCustomXMLData">
+Fix custom XML data.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of custom XML data fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-InspectHeadersAndFooters">
+Inspect headers and footers.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of headers and footers inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixHeadersAndFooters">
+Fix headers and footers.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of headers and footers fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-ContainsHeadersInWorksheet_">
+The internal implementation of ContainsHeadersInWorksheet.
+</translation>
+<translation id="Description-ContainsHeadersInWorksheet">
+Check if the Target worksheet contains any header.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to check if it contains any header.
+
+[return]
+Boolean: When some header is contained, true is returned.
+</translation>
+<translation id="Description-ListSheetsContainsHeaders_">
+The internal implementation of ListSheetsContainsHeaders.
+</translation>
+<translation id="Description-ListSheetsContainsHeaders">
+List worksheets with a header.
+
+[return]
+Collection(Of Worksheet): Listed worksheets.
+</translation>
+<translation id="Description-ClearHeadersInWorksheet_">
+The internal implementation of ClearHeadersInWorksheet.
+</translation>
+<translation id="Description-ClearHeadersInWorksheet">
+Clear headers in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to clear the footer.
+
+[return]
+Boolean: When some header is cleared, true is returned.
+</translation>
+<translation id="Description-ClearHeaders">
+Clear headers in target workbook.
+
+[return]
+Collection(Of Worksheet): The worksheets with cleared header.
+</translation>
+<translation id="Description-ContainsFootersInWorksheet_">
+The internal implementation of ContainsFootersInWorksheet.
+</translation>
+<translation id="Description-ContainsFootersInWorksheet">
+Check if the Target worksheet contains any footer.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to check if it contains any footer.
+
+[return]
+Boolean: When some footer is contained, true is returned.
+</translation>
+<translation id="Description-ListSheetsContainsFooters_">
+The internal implementation of ListSheetsContainsFooters.
+</translation>
+<translation id="Description-ListSheetsContainsFooters">
+List worksheets with a footer.
+
+[return]
+Collection(Of Worksheet): Listed worksheets.
+</translation>
+<translation id="Description-ClearFootersInWorksheet_">
+The internal implementation of ClearFootersInWorksheet.
+</translation>
+<translation id="Description-ClearFootersInWorksheet">
+Clear footers in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to clear the footer.
+
+[return]
+Boolean: When some footer is cleared, true is returned.
+</translation>
+<translation id="Description-ClearFooters">
+Clear footers in target workbook.
+
+[return]
+Collection(Of Worksheet): The worksheets with cleared footer.
+</translation>
+<translation id="Description-ListInvisibleContentInWorksheet_">
+The internal implementation of ListInvisibleContentInWorksheet.
+</translation>
+<translation id="Description-ListInvisibleContentInWorksheet">
+List invisible content in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list invisible content.
+
+[return]
+Collection(Of Shape): Listed invisible content.
+</translation>
+<translation id="Description-ListInvisibleContent_">
+The internal implementation of ListInvisibleContent.
+</translation>
+<translation id="Description-ListInvisibleContent">
+List invisible content.
+
+[return]
+Collection(Of Shape): Listed invisible content.
+</translation>
+<translation id="Description-VisualizeInvisibleContentInWorksheet">
+Visualize content in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list visualize content.
+
+[return]
+Collection(Of Shape): Visualized content.
+</translation>
+<translation id="Description-VisualizeInvisibleContent">
+Visualize content.
+
+[return]
+Collection(Of Shape): Visualized content.
+</translation>
+<translation id="Description-DeleteInvisibleContentInWorksheet">
+Delete invisible content in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete invisible content.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted invisible content information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the invisible content was contained.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-DeleteInvisibleContent">
+Delete invisible content in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted invisible content information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the invisible content was contained.
+    Shape.Type: Type of shape.
+</translation>
+<translation id="Description-InspectInvisibleContent">
+Inspect invisible content.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of invisible content inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixInvisibleContent">
+Fix invisible content.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of invisible content fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-FindCellsInWorksheet">
+List cells that contains specified string in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to find cells.
+What As String: The string to search for.
+
+[return]
+Collection(Of Range): Listed cells.
+
+[see also]
+Range.Find
+</translation>
+<translation id="Description-FindFunctionInWorksheet">
+List cells that contains specified function in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to find function.
+ByVal FunctionName As String: The funciton name to search for.
+
+[return]
+Collection(Of Range): Listed cells.
+</translation>
+<translation id="Description-DeletePivotTable">
+Delete a pivot table.
+
+[parameters]
+TargetPivotTable As PivotTable: Pivot table to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted pivot table information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the pivot table was located.
+</translation>
+<translation id="Description-DeleteSlicerCache">
+Delete a slicer cache.
+
+[parameters]
+TargetSlicerCache As SlicerCache: Slicer cache to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted slicer cache information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Workbook path where the slicer cache was located.
+    SlicerCache.SlicerCacheType: Type of slicer cache.
+</translation>
+<translation id="Description-DeleteChartObject">
+Delete a chart object.
+
+[parameters]
+TargetChartObject As ChartObject: Target chart object to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted chart object information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the chart object was located.
+</translation>
+<translation id="Description-DeleteCustomProperty">
+Delete a custom property.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted custom property information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the custom property was contained.
+</translation>
+<translation id="Description-VisualizeWorksheet">
+Visualize a worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to visualize.
+
+[return]
+Worksheet: Visualized worksheet.
+</translation>
+<translation id="Description-DeleteWorksheet">
+Delete a worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Worksheet to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted worksheet information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the worksheet was located.
+</translation>
+<translation id="Description-VisualizeName">
+Visualize a name.
+
+[parameters]
+ByVal TargetName As Name: Target name to visualize.
+
+[return]
+Name: Visualized name.
+</translation>
+<translation id="Description-DeleteName">
+Delete a name.
+
+[parameters]
+TargetName As Name: Target name to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted name information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Workbook/Worksheet path where the name was contained.
+</translation>
+<translation id="Description-DeleteScenario">
+Delete a scenario.
+
+[parameters]
+TargetScenario As Scenario: Scenario to delete.
+
+[return]
+Scripting.Dictionary(Of String, String): Deleted scenario information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the scenario was located.
+</translation>
+<translation id="Description-GetFilenameWithoutError">
+Get filename of Graph without error.
+
+[parameters]
+ByVal Graph As Graphic: Target graph to get filename.
+
+[return]
+String: filename of graph.
+</translation>
+<translation id="Description-VisualizeRange">
+Visualize a range.
+
+[parameters]
+ByVal TargetRange As Range: Target range to visualize.
+
+[return]
+Range: Visualized range.
+</translation>
+<translation id="Description-DeleteHiddenRanges">
+Delete hidden ranges.
+
+[parameters]
+HiddenRanges As Collection: Target ranges to delete.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden ranges information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as String.
+</translation>
+<translation id="Description-ListDataModels">
+List data models.
+
+[return]
+Collection(Of WorkbookConnection): Listed data models.
+</translation>
+<translation id="Description-RemoveDataModels">
+Remove data models.
+</translation>
+<translation id="Description-ListPivotTablesInWorksheet_">
+The internal implementation of ListPivotTablesInWorksheet.
+</translation>
+<translation id="Description-ListPivotTablesInWorksheet">
+List pivot tables in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list pivot tables.
+
+[return]
+Collection(Of PivotTable): Listed pivot tables.
+</translation>
+<translation id="Description-ListPivotTables_">
+The internal implementation of ListPivotTables.
+</translation>
+<translation id="Description-ListPivotTables">
+List pivot tables.
+
+[return]
+Collection(Of PivotTable): Listed pivot tables.
+</translation>
+<translation id="Description-DeletePivotTablesInWorksheet">
+Delete pivot tables in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete pivot tables.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted pivot tables information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the pivot table was contained.
+</translation>
+<translation id="Description-DeletePivotTables">
+Delete pivot tables in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted pivot tables information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the pivot table was contained.
+</translation>
+<translation id="Description-ListPivotChartsInWorksheet_">
+The internal implementation of ListPivotChartsInWorksheet.
+</translation>
+<translation id="Description-ListPivotChartsInWorksheet">
+List pivot charts in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list pivot charts.
+
+[return]
+Collection(Of ChartObject): Listed pivot charts.
+</translation>
+<translation id="Description-ListPivotCharts_">
+The internal implementation of ListPivotCharts.
+</translation>
+<translation id="Description-ListPivotCharts">
+List pivot charts.
+
+[return]
+Collection(Of ChartObject): Listed pivot charts.
+</translation>
+<translation id="Description-DeletePivotChartsInWorksheet">
+Delete pivot charts in Target worksheete.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete pivot charts.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted pivot charts information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the pivot chart was contained.
+</translation>
+<translation id="Description-DeletePivotCharts">
+Delete pivot charts in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted pivot charts information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Range as string where the pivot chart was contained.
+</translation>
+<translation id="Description-ListCubeFormulasInWorksheet_">
+The internal implementation of ListCubeFormulasInWorksheet.
+</translation>
+<translation id="Description-ListCubeFormulasInWorksheet">
+List cube formulas in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list cube formulas.
+
+[return]
+Collection(Of Range): Listed cells that contains the cube formula.
+</translation>
+<translation id="Description-ListCubeFormulas_">
+The internal implementation of ListCubeFormulas.
+</translation>
+<translation id="Description-ListCubeFormulas">
+List cube formulas.
+
+[return]
+Collection(Of Range): Listed cells that contains the cube formula.
+</translation>
+<translation id="Description-ListSlicers_">
+The internal implementation of ListSlicers.
+</translation>
+<translation id="Description-ListSlicers">
+List slicers in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list slicers.
+
+[return]
+Collection(Of SlicerCache): Listed slicers.
+</translation>
+<translation id="Description-DeleteSlicers">
+Delete slicers in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted slicers information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Workbook path where the slicer was located.
+    SlicerCache.SlicerCacheType: Type of slicer cache.
+</translation>
+<translation id="Description-ListTimelines_">
+The internal implementation of ListTimelines.
+</translation>
+<translation id="Description-ListTimelines">
+List timelines in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list timelines.
+
+[return]
+Collection(Of SlicerCache): Listed timelines.
+</translation>
+<translation id="Description-DeleteTimelines">
+Delete timelines in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted timelines information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Workbook path where the timeline was located.
+    SlicerCache.SlicerCacheType: Type of slicer cache.
+</translation>
+<translation id="Description-ListLinksToOtherFiles_">
+The internal implementation of ListLinksToOtherFiles.
+</translation>
+<translation id="Description-ListLinksToOtherFiles">
+List links to other files.
+
+[return]
+Collection(Of String): Listed links to other files.
+</translation>
+<translation id="Description-ListExternalLinkCellsInWorksheet_">
+The internal implementation of ListExternalLinkCellsInWorksheet.
+</translation>
+<translation id="Description-ListExternalLinkCellsInWorksheet">
+List cells that contain link to other file in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list cells that contain link to other file.
+
+[return]
+Collection(Of Range): Listed cells.
+</translation>
+<translation id="Description-ListExternalLinkCells">
+List cells that contain link to other file.
+
+[return]
+Collection(Of Range): Listed cells.
+</translation>
+<translation id="Description-BreakLinksToOtherFiles">
+Break all links in target workbook.
+
+[return]
+Collection(Of String): List of bloken links.
+</translation>
+<translation id="Description-ListRealTimeDataFunctionsInWorksheet_">
+The internal implementation of ListRealTimeDataFunctionsInWorksheet.
+</translation>
+<translation id="Description-ListRealTimeDataFunctionsInWorksheet">
+List cells that contain data function in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list cells that contain data function.
+
+[return]
+Collection(Of Range): Listed cells.
+</translation>
+<translation id="Description-ListRealTimeDataFunctions_">
+The internal implementation of ListRealTimeDataFunctions.
+</translation>
+<translation id="Description-ListRealTimeDataFunctions">
+List cells that contain data function.
+
+[return]
+Collection(Of Range): Listed cells.
+</translation>
+<translation id="Description-ListDefinedScenariosInWorksheet_">
+The internal implementation of ListDefinedScenariosInWorksheet.
+</translation>
+<translation id="Description-ListDefinedScenariosInWorksheet">
+List defined scenarios in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list defined scenarios.
+
+[return]
+Collection(Of Scenario): Listed defined scenarios.
+</translation>
+<translation id="Description-ListDefinedScenarios_">
+The internal implementation of ListDefinedScenarios.
+</translation>
+<translation id="Description-ListDefinedScenarios">
+List defined scenarios.
+
+[return]
+Collection(Of Scenario): Listed defined scenarios.
+</translation>
+<translation id="Description-DeleteDefinedScenariosInWorksheet">
+Delete scenarios in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete scenarios.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted scenarios information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the scenario was contained.
+</translation>
+<translation id="Description-DeleteDefinedScenarios">
+Delete scenarios in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted scenarios information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the scenario was contained.
+</translation>
+<translation id="Description-ListActiveFilters_">
+The internal implementation of ListActiveFilters.
+</translation>
+<translation id="Description-ListActiveFilters">
+List ranges with active filter.
+
+[return]
+Collection(Of Range): Listed ranges.
+</translation>
+<translation id="Description-InactivateActiveFilters">
+Inactive active filters on range.
+
+[return]
+Collection(Of Range): Inactived ranges.
+</translation>
+<translation id="Description-ListCustomWorksheetPropertiesInWorksheet_">
+The internal implementation of ListCustomWorksheetPropertiesInWorksheet.
+</translation>
+<translation id="Description-ListCustomWorksheetPropertiesInWorksheet">
+List custom worksheet properties in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list custom worksheet properties.
+
+[return]
+Collection(Of CustomProperty): Listed custom worksheet properties.
+</translation>
+<translation id="Description-ListCustomWorksheetProperties_">
+The internal implementation of ListCustomWorksheetProperties.
+</translation>
+<translation id="Description-ListCustomWorksheetProperties">
+List custom worksheet properties.
+
+[return]
+Collection(Of CustomProperty): Listed custom worksheet properties.
+</translation>
+<translation id="Description-DeleteCustomWorksheetPropertiesInWorksheet">
+Delete custom worksheet properties in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete custom worksheet properties.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted custom worksheet properties information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the custom worksheet property was contained.
+</translation>
+<translation id="Description-DeleteCustomWorksheetProperties">
+Delete custom worksheet properties in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted custom worksheet properties information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the custom worksheet property was contained.
+</translation>
+<translation id="Description-ListHiddenNamesInWorksheet_">
+The internal implementation of ListHiddenNamesInWorksheet.
+</translation>
+<translation id="Description-ListHiddenNamesInWorksheet">
+List hidden names in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list hidden names.
+
+[return]
+Collection(Of Name): Listed hidden names.
+</translation>
+<translation id="Description-ListHiddenNamesInWorkbook_">
+The internal implementation of ListHiddenNamesInWorkbook.
+</translation>
+<translation id="Description-ListHiddenNamesInWorkbook">
+List hidden names in target workbook.
+
+[return]
+Collection(Of Name): Listed hidden names.
+</translation>
+<translation id="Description-ListHiddenNames_">
+The internal implementation of ListHiddenNames.
+</translation>
+<translation id="Description-ListHiddenNames">
+List hidden names.
+
+[return]
+Collection(Of Name): Listed hidden names.
+</translation>
+<translation id="Description-VisualizeHiddenNamesInWorksheet">
+Visualize hidden names in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to visualize hidden names.
+
+[return]
+Collection(Of Name): Visualized hidden names.
+</translation>
+<translation id="Description-VisualizeHiddenNamesInWorkbook">
+Visualize hidden names in target workbook.
+
+[return]
+Collection(Of Name): Visualized hidden names.
+</translation>
+<translation id="Description-VisualizeHiddenNames">
+Visualize hidden names.
+
+[return]
+Collection(Of Name): Visualized hidden names.
+</translation>
+<translation id="Description-DeleteHiddenNamesInWorksheet">
+Delete hidden names in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete hidden names.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden names information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Sheet path where the hidden name was contained.
+</translation>
+<translation id="Description-DeleteHiddenNamesInWorkbook">
+Delete hidden names in target workbook only on the book.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden names information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Workbook path where the hidden name was contained.
+</translation>
+<translation id="Description-DeleteHiddenNames">
+Delete hidden names in target workbook of all.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden names information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Object name.
+    Location: Workbook path or Sheet path where the hidden name was contained.
+</translation>
+<translation id="Description-ListHiddenRowsAndColumnsInWorksheet_">
+The internal implementation of ListHiddenRowsAndColumnsInWorksheet.
+</translation>
+<translation id="Description-ListHiddenRowsAndColumnsInWorksheet">
+List hidden rows and columns in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list rows and columns.
+
+[return]
+Collection(Of Range): Listed rows and columns.
+</translation>
+<translation id="Description-ListHiddenRowsAndColumns_">
+The internal implementation of ListHiddenRowsAndColumns.
+</translation>
+<translation id="Description-ListHiddenRowsAndColumns">
+List hidden rows and columns.
+
+[return]
+Collection(Of Range): Listed rows and columns.
+</translation>
+<translation id="Description-VisualizeHiddenRowsAndColumnsInWorksheet">
+Visualize hidden rows and columns in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to visualize rows and columns.
+
+[return]
+Collection(Of Range): Visualized rows and columns.
+</translation>
+<translation id="Description-VisualizeHiddenRowsAndColumns">
+Visualize hidden rows and columns.
+
+[return]
+Collection(Of Range): Visualized rows and columns.
+</translation>
+<translation id="Description-DeleteHiddenRowsAndColumnsInWorksheet">
+Delete hidden rows/columns in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete hidden rows/columns.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden rows/columns information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as String.
+</translation>
+<translation id="Description-DeleteHiddenRowsAndColumns">
+Delete hidden rows/columns in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden rows/columns information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as String.
+</translation>
+<translation id="Description-InspectHiddenRowsAndColumns">
+Inspect hidden rows and columns.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of hidden rows and columns inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixHiddenRowsAndColumns">
+Fix hidden rows and columns.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of hidden rows and columns fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+<translation id="Description-ListHiddenRowsInWorksheet_">
+The internal implementation of ListHiddenRowsInWorksheet.
+</translation>
+<translation id="Description-ListHiddenRowsInWorksheet">
+List hidden rows in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list rows.
+
+[return]
+Collection(Of Range): Listed rows.
+</translation>
+<translation id="Description-ListHiddenRows_">
+The internal implementation of ListHiddenRows.
+</translation>
+<translation id="Description-ListHiddenRows">
+List hidden rows.
+
+[return]
+Collection(Of Range): Listed rows.
+</translation>
+<translation id="Description-VisualizeHiddenRowsInWorksheet">
+Visualize hidden rows in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to visualize rows.
+
+[return]
+Collection(Of Range): Visualized rows.
+</translation>
+<translation id="Description-VisualizeHiddenRows">
+Visualize hidden rows.
+
+[return]
+Collection(Of Range): Visualized rows.
+</translation>
+<translation id="Description-DeleteHiddenRowsInWorksheet">
+Delete hidden rows in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete hidden rows.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden rows information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as String.
+</translation>
+<translation id="Description-DeleteHiddenRows">
+Delete hidden rows in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden rows information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as String.
+</translation>
+<translation id="Description-ListHiddenColumnsInWorksheet_">
+The internal implementation of ListHiddenColumnsInWorksheet.
+</translation>
+<translation id="Description-ListHiddenColumnsInWorksheet">
+List hidden columns in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to list columns.
+
+[return]
+Collection(Of Range): Listed columns.
+</translation>
+<translation id="Description-ListHiddenColumns_">
+The internal implementation of ListHiddenColumns.
+</translation>
+<translation id="Description-ListHiddenColumns">
+List hidden columns.
+
+[return]
+Collection(Of Range): Listed columns.
+</translation>
+<translation id="Description-VisualizeHiddenColumnsInWorksheet">
+Visualize hidden columns in target worksheet.
+
+[parameters]
+ByVal TargetWorksheet As Worksheet: Target worksheet to visualize columns.
+
+[return]
+Collection(Of Range): Visualized columns.
+</translation>
+<translation id="Description-VisualizeHiddenColumns">
+Visualize hidden columns.
+
+[return]
+Collection(Of Range): Visualized columns.
+</translation>
+<translation id="Description-DeleteHiddenColumnsInWorksheet">
+Delete hidden columns in Target worksheet.
+
+[parameters]
+TargetWorksheet As Worksheet: Target worksheet to delete hidden columns.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden columns information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as String where the hidden column was contained.
+</translation>
+<translation id="Description-DeleteHiddenColumns">
+Delete hidden columns in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted hidden columns information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Location: Range as String where the hidden column was contained.
+</translation>
+<translation id="Description-ListHiddenWorksheets_">
+The internal implementation of ListHiddenWorksheets.
+</translation>
+<translation id="Description-ListHiddenWorksheets">
+List hidden worksheets.
+
+[return]
+Collection(Of Worksheet): Listed hidden worksheets.
+</translation>
+<translation id="Description-VisualizeHiddenWorksheets">
+Visualize hidden worksheets.
+
+[return]
+Collection(Of Worksheet): Visualized hidden worksheets.
+</translation>
+<translation id="Description-DeleteHiddenWorksheets">
+Delete hidden worksheets in target workbook.
+
+[return]
+Collection(Of Scripting.Dictionary(Of String, String)): List of deleted worksheets information.
+Scripting.Dictionary contains the following key-value pair.
+    Type: Type of object.
+    Name: Sheet name.
+    Location: Sheet path where the hidden worksheet was contained.
+</translation>
+<translation id="Description-InspectHiddenWorksheets">
+Inspect hidden worksheets.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of inspection.
+
+[return]
+MsoDocInspectorStatus: Status of MsoDocInspectorStatus: Status of hidden worksheets inspection.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Inspect
+</translation>
+<translation id="Description-FixHiddenWorksheets">
+Fix hidden worksheets.
+
+[parameters]
+Optional ByRef Results As String = vbNullString: Result of fixing.
+
+[return]
+MsoDocInspectorStatus: Status of hidden worksheets fixing.
+
+[see also]
+Microsoft.Office.Core.DocumentInspector.Fix
+</translation>
+</translations>
